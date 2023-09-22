@@ -6,7 +6,7 @@ using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
-using Machado_Lefebvre_WsConvertisseur.Models;
+using Machado_Lefebve_ClientConvertisseurV1.Models;
 using Microsoft.UI.Xaml;
 
 namespace Machado_Lefebve_ClientConvertisseurV1.Services

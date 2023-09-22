@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace Machado_Lefebvre_WsConvertisseur.Models
+namespace Machado_Lefebve_ClientConvertisseurV1.Models
 {
     public class Devise
     {
