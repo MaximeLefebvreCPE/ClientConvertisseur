@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Machado_Lefebve_ClientConvertisseurV1 (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Machado_Lefebve_ClientConvertisseurV1 (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
