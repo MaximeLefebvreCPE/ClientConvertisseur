@@ -8,27 +8,31 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel>
-        <TextBlock RelativePanel.AlignHorizontalCenterWithPanel ="True" RelativePanel.Below="True" Margin="10">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Background="{ThemeResource SystemControlBackgroundBaseLowBrush}">
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" FontSize="36" Foreground="Red" Margin="10">
             Convertisseur
         </TextBlock>
-        <TextBox RelativePanel.AlignHorizontalCenterWithPanel ="True" RelativePanel.Below="True" Margin="10">
-            
-        </TextBox>
-        <TextBlock RelativePanel.AlignHorizontalCenterWithPanel ="True" RelativePanel.Below="True" Margin="10">
-            Devise
+        <TextBlock Grid.Row="1" HorizontalAlignment="Center" FontSize="24" Margin="10">
+            Montant en Euros
         </TextBlock>
-        <ComboBox x:Name="cbxDevise" RelativePanel.AlignHorizontalCenterWithPanel ="True" RelativePanel.Below="True" Margin="10" ItemsSource="{Binding}" SelectedValuePath="Id" DisplayMemberPath="NomDevise">
-            
-        </ComboBox>
-        <Button RelativePanel.AlignHorizontalCenterWithPanel ="True" RelativePanel.Below="True" Margin="10">
+
+        <TextBox Grid.Row="2" x:Name="MontantAConvertir" Width="200" Margin="10" PlaceholderText="Entrez le montant"></TextBox>
+
+        <TextBlock Grid.Row="3" HorizontalAlignment="Center" FontSize="24" Margin="10">
+        Devise
+        </TextBlock>
+
+        <ComboBox Grid.Row="4" x:Name="cbxDevise" HorizontalAlignment="Center" Width="200" Margin="10" ItemsSource="{Binding}" SelectedValuePath="Id" DisplayMemberPath="NomDevise"></ComboBox>
+
+        <Button Grid.Row="5" x:Name="BtnConvertir" HorizontalAlignment="Center"  Width="200" Margin="10" Click="BtnConvertir_Click">
             Convertir
         </Button>
-        <TextBlock RelativePanel.AlignHorizontalCenterWithPanel ="True" RelativePanel.Below="True" Margin="10">
+
+        <TextBlock Grid.Row="6" HorizontalAlignment="Center" FontSize="24" Margin="10">
             Montant en Devises
         </TextBlock>
-        <TextBox RelativePanel.AlignHorizontalCenterWithPanel ="True" RelativePanel.Below="True" Margin="10">
-            
-        </TextBox>
+
+        <TextBox Grid.Row="7" x:Name="MontantConverti" Width="200" Margin="10" IsReadOnly="True"></TextBox>
     </StackPanel>
+
 </Page>
